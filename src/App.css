@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+:root {
+    /* tokens */
+    --color: #2F67D0;
+    --white: #FCFBFB;
+    --dark: #353535;
+    --middle: #ADACAC;
+    --font: 'EB Garamond', serif;
+    /* webpage */
+    --text-main-color: var(--color);
+    --text-secondary-color: var(--middle);
+    --surface-color: var(--white);  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  line-height: 1;
+}
+body {
+    background-color: var(--surface-color);
+    color: var(--text-main-color);
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 74px 24px 24px 24px;
+    gap: 48px;
+}
+#root{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+.O_Nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--surface-color);
+}
+.O_Main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+.O_Footer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.A_Footer_Text{
+  font-size: 24px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.A_Footer_Text_Link{
+  color: var(--text-main-color);
+  text-decoration: underline;
+  cursor: pointer;
+  width: fit-content;
+}
+.A_Nav_Title{
+  font-size: 24px;
+}
+.W_NavLanguages{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.A_NavLanguages_Language{
+  font-size: 24px;
+  cursor: pointer;
+}
+.A_Main_Title{
+  font-size: 64px;
+  font-weight: 500;
+}
+.C_Projects{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.M_Project{
+  width: calc(100% / 2 - 6px);
+  min-width: 400px;
+  flex-grow: 1;
+  height: auto;
+  aspect-ratio: 16/9;
+  background: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 24px;
+  cursor: pointer;
+}
+.A_Project_Title{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 12px;
+  color: var(--text-main-color);
+  background: var(--white);
+}
+@media (max-width: 768px) {
+  .A_Main_Title{
+    font-size: 42px;
+  }
+}
