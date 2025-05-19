@@ -24,6 +24,7 @@ body {
     color: var(--text-main-color);
     font-family: var(--font);
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     height: fit-content;
@@ -92,6 +93,7 @@ body {
 .W_NavLanguages{
   display: flex;
   flex-direction: column;
+  opacity: 0;
   gap: 2px;
 }
 .A_NavLanguages_Language{
@@ -184,11 +186,36 @@ body {
   body{
     padding: 72px 12px 12px 12px;
   }
+  .O_Nav{
+    padding: 0 12px;
+  }
+  .O_Footer{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .A_Footer_Text{
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+  }
   .M_Project{
     max-width: 100%;
-    padding: 12px;
+    min-width: 100%;
+    padding: 6px;
+  }
+  .A_Project_Title{
+    font-size: 18px;
+    padding: 6px;
   }
   .A_Main_Title{
     font-size: 42px;
+  }
+  @media (max-width: 480px) {
+    .A_Main_Title{
+      font-size: 24px;
+    }
+    .A_ProjectPageInfo_Description{
+      font-size: 24px;
+    }
   }
 }
